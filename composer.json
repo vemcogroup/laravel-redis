@@ -1,0 +1,48 @@
+{
+    "name": "vemcogroup/laravel-redis",
+    "description": "Enhancements to redis driver, such as enabling a serializer and/or compression",
+    "keywords": [ "laravel", "redis", "phpredis", "vemcogroup" ],
+    "license": "MIT",
+    "homepage": "https://github.com/vemcogroup/laravel-redis",
+    "authors": [
+        {
+            "name": "devs @ VG",
+            "email": "contact@vemcogroup.com",
+            "homepage": "https://vemco.group"
+        }
+    ],
+    "require": {
+        "ext-redis": "*",
+        "illuminate/redis": "7.*",
+        "illuminate/support": "7.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0|^5.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vemcogroup\\Redis\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vemcogroup\\Redis\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vemcogroup\\Redis\\RedisServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
