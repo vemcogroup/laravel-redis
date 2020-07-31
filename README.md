@@ -17,6 +17,25 @@ You can install the package via composer:
 composer require vemcogroup/laravel-redis
 ```
 
+Remember to have redis installed with serializer and compression.  
+Answer yes to serializer and compression.
+
+```bash
+pecl upgrade -f redis
+```
+
+If you are missing igbinary
+
+```bash
+pecl install igbinary
+```
+
+If you are missing libzstd
+
+```bash
+brew install zstd
+```
+
 ## Usage
 
 Start by selection the new driver `vredis` in you `.env` file:
