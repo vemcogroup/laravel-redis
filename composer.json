@@ -13,8 +13,8 @@
     ],
     "require": {
         "ext-redis": "^5.0|^6.0",
-        "illuminate/redis": "7.*",
-        "illuminate/support": "7.*"
+        "illuminate/redis": "^7.0|^8.0",
+        "illuminate/support": "^7.0|^8.0"
     },
     "require-dev": {
         "orchestra/testbench": "^4.0|^5.0",
